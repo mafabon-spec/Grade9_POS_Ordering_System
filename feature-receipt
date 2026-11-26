@@ -1,4 +1,3 @@
-#Create a branch named feature-receipt. Develop the receipt display. Calculate the total amount of the order. Display the ordered items, quantities, prices, and total amount. Save your changes.
 def display_receipt(items):
 	"""Print ordered items and return the total order amount.
 
