@@ -57,24 +57,3 @@ if order:
         change = payment - total
         print(f"Change: P{change:.2f}")
         break
-
-def display_receipt(items):
-	"""Print ordered items and return the total order amount.
-
-	Each item is a dictionary containing ``name``, ``quantity``, and
-	``price`` (the unit price).
-	"""
-	total = 0.0
-	print("AINIKA SARI-SARI STORE")
-	print("Receipt")
-
-	for item in items:
-		name = str(item["name"])
-		quantity = item["quantity"]
-		price = float(item["price"])
-		amount = quantity * price
-		total += amount
-		print(f"{name} x{quantity} @ ${price:.2f} = ${amount:.2f}")
-
-	print(f"Total: ${total:.2f}")
-	return total
